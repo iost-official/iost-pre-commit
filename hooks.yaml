@@ -18,7 +18,7 @@
     description: "Runs `golint`, requires https://github.com/golang/lint"
 -   id: go-metalinter
     name: 'gometalinter'
-    entry: run-go-metaliner.sh
+    entry: run-go-metalinter.sh
     files: '\.go$'
     language: 'script'
     description: "Runs `gometalinter`, requires https://github.com/alecthomas/gometalinter"
