@@ -13,11 +13,13 @@ Add this to your `.pre-commit-config.yaml`
         - id: go-fmt
         - id: go-vet
         - id: go-lint
-        - id: go-metalinter
 
 ### Available hooks
 
 - `go-fmt` - Runs `gofmt`, requires golang
 - `go-vet` - Runs `go vet`, requires golang
 - `go-lint` - Runs `golint`, requires https://github.com/golang/lint
+
+### In progress
+
 - `go-metalinter` - Runs `gometalinter`, requires https://github.com/alecthomas/gometalinter
