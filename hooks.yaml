@@ -1,0 +1,24 @@
+-   id: go-fmt
+    name: 'go fmt'
+    entry: run-go-fmt.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `gofmt`, requires golang"
+-   id: go-vet
+    name: 'go vet'
+    entry: run-go-vet.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go vet`, requires golang"
+-   id: go-lint
+    name: 'go lint'
+    entry: run-go-lint.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `golint`, requires https://github.com/golang/lint"
+-   id: go-metalinter
+    name: 'gometalinter'
+    entry: run-go-metaliner.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `gometalinter`, requires https://github.com/alecthomas/gometalinter"
