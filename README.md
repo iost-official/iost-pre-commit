@@ -11,15 +11,17 @@ Add this to your `.pre-commit-config.yaml`
       sha: HEAD
       hooks:
         - id: go-fmt
-        - id: go-vet
-        - id: go-lint
+        - id: go-metalinter
 
 ### Available hooks
 
 - `go-fmt` - Runs `gofmt`, requires golang
 - `go-vet` - Runs `go vet`, requires golang
 - `go-lint` - Runs `golint`, requires https://github.com/golang/lint
-
-### In progress
-
 - `go-metalinter` - Runs `gometalinter`, requires https://github.com/alecthomas/gometalinter
+
+### Metalinter
+
+- Runs on all files by default not just changed files (since the metalinter only operates on folders)
+- Sets max deadline of 60s
+- Sets cyclo over 20
