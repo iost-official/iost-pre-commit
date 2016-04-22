@@ -25,3 +25,4 @@ Add this to your `.pre-commit-config.yaml`
 - Runs on all files by default not just changed files (since the metalinter only operates on folders)
 - Sets max deadline of 60s
 - Sets cyclo over 20
+- Set dupl threshold to 100
