@@ -7,11 +7,18 @@ golang hooks for http://pre-commit.com/
 
 Add this to your `.pre-commit-config.yaml`
 
-    - repo: git://github.com/gabriel/pre-commit-golang
-      sha: HEAD
-      hooks:
-        - id: go-fmt
-        - id: go-metalinter
+    -   repo: https://github.com/gabriel/pre-commit-golang
+        sha: HEAD
+        hooks:
+        -   id: go-fmt
+        -   id: go-metalinter
+            args:
+            - --exclude=corefoundation.go
+            - --deadline=60s
+            - --vendor
+            - --cyclo-over=20
+            - --dupl-threshold=100
+
 
 ### Available hooks
 
@@ -23,6 +30,4 @@ Add this to your `.pre-commit-config.yaml`
 ### Metalinter
 
 - Runs on all files by default not just changed files (since the metalinter only operates on folders)
-- Sets max deadline of 60s
-- Sets cyclo over 20
-- Set dupl threshold to 100
+- Use args to override default options
