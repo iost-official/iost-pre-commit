@@ -4,6 +4,12 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `gofmt`, requires golang"
+-   id: py-yapf
+    name: 'google yapf for python'
+    entry: run-py-yapf.sh
+    files: '\.py$'
+    language: 'script'
+    description: "Runs google's `yapf` on python files, requires ypapf, pip install yapf"
 -   id: go-vet
     name: 'go vet'
     entry: run-go-vet.sh
