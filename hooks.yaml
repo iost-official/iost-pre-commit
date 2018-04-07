@@ -10,6 +10,12 @@
     files: '\.py$'
     language: 'script'
     description: "Runs google's `yapf` on python files, requires ypapf, pip install yapf"
+-   id: go-imports
+    name: 'go imports'
+    entry: run-goimports.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `goimports`, requires golang"
 -   id: go-vet
     name: 'go vet'
     entry: run-go-vet.sh
