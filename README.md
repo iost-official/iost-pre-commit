@@ -7,7 +7,7 @@ golang hooks for http://pre-commit.com/
 
 Add this to your `.pre-commit-config.yaml`
 
-    -   repo: https://github.com/gabriel/pre-commit-golang
+    -   repo: https://github.com/iost-official/pre-commit-golang
         sha: HEAD
         hooks:
         -   id: go-fmt
